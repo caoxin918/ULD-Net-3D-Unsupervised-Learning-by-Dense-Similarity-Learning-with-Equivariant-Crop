@@ -1,0 +1,11 @@
+python train_partseg.py \
+	--gpu 0 \
+	--epoch 250 \
+	--use_sgd \
+	--normal \
+	--xavier_init \
+	--scheduler cos \
+	--model dgcnn_partseg \
+	--log_dir finetune_shapenetpart \
+	--restore \
+	--restore_path restore/checkpoint_190.pth.tar

@@ -1,0 +1,11 @@
+python train_cls.py \
+	--gpu 0 \
+	--epoch 250 \
+	--use_sgd \
+	--scheduler cos \
+	--model dgcnn_cls \
+	--dataset modelnet40 \
+	--bn \
+	--log_dir finetune_modelnet \
+	--restore \
+	--restore_path restore/checkpoint_190.pth.tar ;
